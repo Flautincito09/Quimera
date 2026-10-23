@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Quimera | Ropa para mujeres</title>
+
+	<!-- HEAD: configuracion y enlaces de estilos -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/fontello.css">
+</head>
+<body>
+	<header class="encabezado">
+		<div class="barra-superior">
+			<div class="container d-flex justify-content-between align-items-center gap-3">
+				<a class="marca" href="#inicio">Quimera<span>♡</span></a>
+				<nav class="navegacion navbar navbar-expand-lg" aria-label="Navegación principal">
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarQuimera" aria-controls="navbarQuimera" aria-expanded="false" aria-label="Abrir menú">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarQuimera">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#nosotros">Sobre Nosotros</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#productos">Productos</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#contacto">Contacto</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+
+	</header>
+
+	<main id="inicio">
+		<!-- Carrusel -->
+		<section class="carrusel-principal" aria-label="Novedades de Quimera">
+			<div id="carruselQuimera" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
+				<div class="carousel-indicators">
+					<button type="button" data-bs-target="#carruselQuimera" data-bs-slide-to="0" class="active" aria-label="Promoción uno"></button>
+					<button type="button" data-bs-target="#carruselQuimera" data-bs-slide-to="1" aria-label="Promoción dos"></button>
+					<button type="button" data-bs-target="#carruselQuimera" data-bs-slide-to="2" aria-label="Promoción tres"></button>
+				</div>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="img/Qcarrusel.jpg" class="d-block w-100" alt="Conjunto marrón de Quimera">
+					</div>
+					<div class="carousel-item">
+						<img src="img/Qcarrusel1.jpg" class="d-block w-100" alt="Pantalones cargo de Quimera">
+					</div>
+					<div class="carousel-item">
+						<img src="img/Qcarrusel2.jpg" class="d-block w-100" alt="Palazzo de Quimera">
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carruselQuimera" data-bs-slide="prev" aria-label="Anterior">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carruselQuimera" data-bs-slide="next" aria-label="Siguiente">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				</button>
+			</div>
+		</section>
+
+		<!-- Contenido Principal -->
+		<section class="presentacion container" id="nosotros">
+			<p class="etiqueta">Ropa para todos tus días</p>
+			<h1>Vestite de vos con <span>Quimera</span></h1>
+			<p class="texto-presentacion">Prendas cómodas y versátiles para acompañarte en cada plan. Encontrá tu próximo favorito.</p>
+			<a class="boton boton-principal" href="#productos">Ver productos</a>
+		</section>
+
+		<!-- DIVS: Productos -->
+		<section class="seccion-productos" id="productos">
+			<div class="container">
+				<div class="titulo-seccion">
+					<p class="etiqueta">Nueva colección</p>
+					<h2>Elegidos de Quimera</h2>
+					<p>Diseños simples, cómodos y listos para combinar.</p>
+				</div>
+
+				<div class="contenedor-cards">
+					<article class="card producto">
+						<img class="imagen-producto-especial" src="img/Producto1.jpg" alt="Palazzo rosa de Quimera">
+						<div class="contenido-card">
+							<p class="categoria">Conjuntos</p>
+							<h3>Conjunto Morley Dulce</h3>
+							<p class="precio">$ 699</p>
+							<p class="envio envio-gratis">Envío gratis</p>
+							<button class="boton boton-card" type="button" data-bs-toggle="modal" data-bs-target="#detalleProducto" data-producto="Conjunto Morley Dulce" data-precio="$ 699" data-stock="12 unidades" data-talles="S, M, L">Ver detalles</button>
+						</div>
+					</article>
+
+					<article class="card producto">
+						<img src="img/Producto2.jpg" alt="Pantalón cargo en varios colores">
+						<div class="contenido-card">
+							<p class="categoria">Pantalones</p>
+							<h3>Pantalón Cargo Baguet</h3>
+							<p class="precio">$ 599</p>
+							<p class="envio envio-gratis">Envío gratis</p>
+							<button class="boton boton-card" type="button" data-bs-toggle="modal" data-bs-target="#detalleProducto" data-producto="Pantalón Cargo Baguet" data-precio="$ 599" data-stock="8 unidades" data-talles="S, M, L, XL">Ver detalles</button>
+						</div>
+					</article>
+
+					<article class="card producto">
+						<img src="img/Producto3.jpg" alt="Pantalon Tejido">
+						<div class="contenido-card">
+							<p class="categoria">Pantalones</p>
+							<h3>Pantalón Tejido</h3>
+							<p class="precio">$ 799</p>
+							<p class="envio envio-gratis">Envío gratis</p>
+							<button class="boton boton-card" type="button" data-bs-toggle="modal" data-bs-target="#detalleProducto" data-producto="Pantalón Tejido" data-precio="$ 799" data-stock="10 unidades" data-talles="S, M, L">Ver detalles</button>
+						</div>
+					</article>
+
+					<article class="card producto">
+						<img class="imagen-producto-especial" src="img/Producto4.jpg" alt="Pantalón cargo de Quimera">
+						<div class="contenido-card">
+							<p class="categoria">Pantalones</p>
+							<h3>Palazzo Comfort</h3>
+							<p class="precio">$ 750</p>
+							<p class="envio envio-gratis">Envío gratis</p>
+							<button class="boton boton-card" type="button" data-bs-toggle="modal" data-bs-target="#detalleProducto" data-producto="Palazzo Comfort" data-precio="$ 750" data-stock="6 unidades" data-talles="S, M, L, XL">Ver detalles</button>
+						</div>
+					</article>
+
+					<article class="card producto">
+						<img src="img/Producto5.jpg" alt="Remera básica de mujer">
+						<div class="contenido-card">
+							<p class="categoria">Básicos</p>
+							<h3>Remera Essential</h3>
+							<p class="precio">$ 399</p>
+							<p class="envio envio-gratis">Envío gratis</p>
+							<button class="boton boton-card" type="button" data-bs-toggle="modal" data-bs-target="#detalleProducto" data-producto="Remera Essential" data-precio="$ 399" data-stock="15 unidades" data-talles="S, M, L, XL">Ver detalles</button>
+						</div>
+					</article>
+
+					<article class="card producto">
+						<img src="img/Producto6.jpg" alt="Look casual de Quimera">
+						<div class="contenido-card">
+							<p class="categoria">Looks</p>
+							<h3>Look Urbano Quimera</h3>
+							<p class="precio">$ 399</p>
+							<p class="envio sin-envio">Últimas unidades</p>
+							<button class="boton boton-card" type="button" data-bs-toggle="modal" data-bs-target="#detalleProducto" data-producto="Look Urbano Quimera" data-precio="$ 399" data-stock="3 unidades" data-talles="S, M">Ver detalles</button>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<!-- DIVS: Promocion -->
+		<section class="beneficios container">
+			<div class="beneficio">
+				<strong>Calidad</strong>
+				<span>Prendas elegidas para durar.</span>
+			</div>
+			<div class="beneficio">
+				<strong>Comodidad</strong>
+				<span>Diseños para moverte libre.</span>
+			</div>
+			<div class="beneficio">
+				<strong>Envíos</strong>
+				<span>Recibí tu compra donde estés.</span>
+			</div>
+		</section>
+	</main>
+
+	<!-- MODAL: Detalle de los productos -->
+	<div class="modal fade" id="detalleProducto" tabindex="-1" aria-labelledby="tituloDetalle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content detalle-modal">
+				<div class="modal-header">
+					<h2 class="modal-title" id="tituloDetalle">Detalles del producto</h2>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+				</div>
+				<div class="modal-body">
+					<p class="categoria">Producto Quimera</p>
+					<h3 id="detalleNombre"></h3>
+					<div class="datos-detalle">
+						<div>
+							<span>Precio</span>
+							<strong id="detallePrecio"></strong>
+						</div>
+						<div>
+							<span>Stock</span>
+							<strong id="detalleStock"></strong>
+						</div>
+					</div>
+					<p class="titulo-talles">Talles disponibles</p>
+					<div id="detalleTalles" class="talles"></div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="boton boton-principal" data-bs-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- FOOTER: Contactos -->
+	<footer class="pie" id="contacto">
+		<div class="container d-flex justify-content-between align-items-center gap-3">
+			<div>
+				<a class="marca marca-pie" href="#inicio">Quimera<span>♡</span></a>
+				<p>Ropa de mujeres con comodidad y estilo.</p>
+			</div>
+			<div class="contacto">
+				<p>Información de contacto</p>
+				<div class="enlaces-contacto">
+					<a href="https://www.instagram.com/quimera.love1919/" target="_blank" rel="noopener noreferrer">Instagram<br><span>@quimera.love1919</span></a>
+					<a href="https://www.tiktok.com/@quimera.love" target="_blank" rel="noopener noreferrer">TikTok<br><span>@quimera.love</span></a>
+					<a href="https://wa.me/59899082892?text=Hola%20Quimera" target="_blank" rel="noopener noreferrer">WhatsApp<br><span>099082892</span></a>
+					<a href="https://www.google.com/maps/search/?api=1&query=Fern%C3%A1ndez%20Crespo%20y%2018%2C%20Montevideo%2C%20Uruguay" target="_blank" rel="noopener noreferrer">Ubicación<br><span># Fernández crespo y 18, Montevideo, Uruguay</span></a>
+					<a href="mailto:marianavalki1980@gmail.com">Gmail<br><span>marianavalki1980@gmail.com</span></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- SCRIPTS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+	<script>
+		document.querySelectorAll('[data-bs-target="#detalleProducto"]').forEach(function (boton) {
+			boton.addEventListener('click', function () {
+				document.querySelector('#detalleNombre').textContent = boton.dataset.producto;
+				document.querySelector('#detallePrecio').textContent = boton.dataset.precio;
+				document.querySelector('#detalleStock').textContent = boton.dataset.stock;
+				document.querySelector('#detalleTalles').textContent = boton.dataset.talles;
+			});
+		});
+	</script>
+</body>
+</html>
